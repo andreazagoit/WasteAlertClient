@@ -1,0 +1,31 @@
+@import '../style/variables.scss';
+
+.loginPage {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginForm {
+        flex: 1;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        max-width: 320px;
+
+        h1 {
+            color: $primary;
+            text-align: center;
+            margin-bottom: -5px;
+            font-size: 52px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: -8px;
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+}

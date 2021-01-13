@@ -1,0 +1,60 @@
+@import '../style/variables.scss';
+
+.navbar {
+
+    .container {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-weight: bold;
+            letter-spacing: 4px;
+            font-size: 32px;
+
+            @media (max-width: $tablet) {
+                font-size: 24px;
+            }
+        }
+
+        .logout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            border-radius: 999px;
+            padding: 5px;
+
+            &__phone {
+                margin-left: 20px;
+                margin-right: 10px;
+                margin-bottom: 2px;
+                font-weight: bold;
+                letter-spacing: normal;
+
+                @media (max-width: $phone) {
+                    display: none;
+                }
+            }
+
+            &__button {
+                height: 36px;
+                width: 36px;
+                background-color: green;
+                border-radius: 999px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid white;
+
+                .MuiSvgIcon-root {
+                    border: none;
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+}

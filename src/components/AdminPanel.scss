@@ -1,0 +1,20 @@
+@import '../style/variables.scss';
+
+.adminPanel {
+    background-color: blue;
+    color: white;
+
+    .container {
+        padding: 60px 20px;
+        button {
+            margin-top: 20px;
+            border-color: white;
+            background-color: white;
+            color: blue;
+            &:hover{
+                background-color: inherit;
+                color: white;
+            }
+        }
+    }
+}
